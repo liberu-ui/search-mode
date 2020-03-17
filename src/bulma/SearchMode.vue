@@ -1,9 +1,9 @@
 <template>
     <core-search-mode v-bind="$attrs"
         v-on="$listeners">
-        <template v-slot:default="{ clickEvents, query, value }"
-            v-if="query">
-            <span class="icon">
+        <template v-slot:default="{ clickEvents, query, value }">
+            <span class="icon"
+                v-if="query">
                 <a class="is-naked"
                     v-on="clickEvents">
                     <fal :key="query">
