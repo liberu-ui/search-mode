@@ -29,6 +29,26 @@
                                 transform="shrink-2 right-10"
                                 v-if="query[1]"/>
                         </template>
+                        <template v-else-if="value === 'exactMatch'">
+                            <falt :value="query[0]"
+                                :transform="`shrink-2 ${query[2] ? 'left-10' : (!query[1] ? 'right-10' : '')}`"/>
+                            <falt :value="query[1]"
+                                :transform="`shrink-2 ${query[2] ? '' : 'right-10' }`"
+                                v-if="query[1]"/>
+                            <falt :value="query[2]"
+                                transform="shrink-2 right-10"
+                                v-if="query[2]"/>
+                        </template>
+                        <template v-else-if="value === 'doesntContain'">
+                            <falt class="is-strikethrough" :value="query[0]"
+                                :transform="`shrink-2 ${query[2] ? 'left-10' : (!query[1] ? 'right-10' : '')}`"/>
+                            <falt class="is-strikethrough" :value="query[1]"
+                                :transform="`shrink-2 ${query[2] ? '' : 'right-10' }`"
+                                v-if="query[1]"/>
+                            <falt class="is-strikethrough" :value="query[2]"
+                                transform="shrink-2 right-10"
+                                v-if="query[2]"/>
+                        </template>
                     </fal>
                 </a>
             </span>
@@ -49,3 +69,9 @@ export default {
     components: { CoreSearchMode },
 };
 </script>
+
+<style lang="scss">
+    .is-strikethrough {
+        text-decoration: line-through;
+    }
+</style>

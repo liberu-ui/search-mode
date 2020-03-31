@@ -22,9 +22,10 @@ export default {
     },
 
     methods: {
-        update() {
+        update(event) {
             this.$emit('input', this.modes[this.next()]);
             this.$emit('change');
+            event.stopPropagation();
         },
         next() {
             const current = this.modes.findIndex(mode => mode === this.value);

@@ -1,3 +1,3 @@
-const Modes = ['full', 'startsWith', 'endsWith'];
+const Modes = ['full', 'startsWith', 'endsWith', 'exactMatch', 'doesntContain'];
 
 export default Modes;
