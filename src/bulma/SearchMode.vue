@@ -49,6 +49,9 @@
                                 transform="shrink-2 right-10"
                                 v-if="query[2]"/>
                         </template>
+                        <template v-else-if="value === 'algolia'">
+                            <fa :icon="['fab', 'algolia']"/>
+                        </template>
                     </fal>
                 </a>
             </span>
@@ -59,9 +62,10 @@
 <script>
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
+import { faAlgolia } from '@fortawesome/free-brands-svg-icons';
 import CoreSearchMode from '../renderless/CoreSearchMode.vue';
 
-library.add(faAsterisk);
+library.add(faAsterisk, faAlgolia);
 
 export default {
     name: 'SearchMode',
