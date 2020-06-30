@@ -23,7 +23,6 @@
   "homepage": "https://github.com/enso-ui/search-mode#readme",
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@enso-ui/card": "1.0.x",
     "@vue/cli-plugin-babel": "^4.0.5",
     "@vue/cli-plugin-eslint": "^4.0.5",
     "@vue/cli-service": "^4.0.5",
@@ -36,6 +35,7 @@
     "eslint-plugin-vue": "^6.0.0"
   },
   "dependencies": {
+    "@enso-ui/card": "^2.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
