@@ -9,23 +9,7 @@ module.exports = {
     ],
     globals: {
         axios: true,
-    },
-    settings: {
-        'import/resolver': {
-            alias: {
-                map: [
-                    ['@core', `${__dirname}/client/node_modules/@enso-ui/ui/src`],
-                    ['@root', `${__dirname}/client/src/js`],
-                    ['@pages', `${__dirname}/client/src/js/pages`],
-                    ['@store', `${__dirname}/client/src/js/store`],
-                    ['@components', `${__dirname}/client/src/js/components`],
-                    ['@calendar', `${__dirname}/client/node_modules/@enso-ui/calendar/src/bulma`],
-                    ['@products', `${__dirname}/client/node_modules/@enso-ui/products/src/bulma`],
-                    ['@categories', `${__dirname}/client/node_modules/@enso-ui/categories/src/bulma`],
-                    ['@measurement-units', `${__dirname}/client/node_modules/@enso-ui/measurement-units/src/bulma`],
-                ],
-            },
-        },
+        route: true,
     },
     parserOptions: {
         parser: 'babel-eslint',
