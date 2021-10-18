@@ -49,7 +49,7 @@
                                 transform="shrink-2 right-10"
                                 v-if="query[2]"/>
                         </template>
-                        <template v-else-if="value === 'algolia'">
+                        <template v-else-if="value === 'searchProvider'">
                             <fa :icon="['fab', 'algolia']"/>
                         </template>
                     </fal>
