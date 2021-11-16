@@ -2,14 +2,13 @@ module.exports = {
     root: true,
     extends: [
         'airbnb-base',
-        'plugin:vue/recommended',
+        'plugin:vue/vue3-recommended',
     ],
     plugins: [
         'vue',
     ],
     globals: {
         axios: true,
-        route: true,
     },
     parserOptions: {
         parser: 'babel-eslint',
@@ -30,7 +29,9 @@ module.exports = {
         'no-underscore-dangle': 0,
         'func-names': 0,
         'no-shadow': 0,
+        'vue/multi-word-component-names': 0,
         'vue/max-attributes-per-line': 0,
+        'vue/first-attribute-linebreak': 0,
         'no-return-assign': ['error', 'except-parens'],
         'vue/html-closing-bracket-newline': ['error', {
             singleline: 'never',
