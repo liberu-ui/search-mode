@@ -1,6 +1,6 @@
 {
   "name": "@enso-ui/search-mode",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Search Mode",
   "main": "index.js",
   "scripts": {
