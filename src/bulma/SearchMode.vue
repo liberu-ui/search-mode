@@ -59,7 +59,9 @@
 </template>
 
 <script>
-import { FontAwesomeIcon as Fa } from '@fortawesome/vue-fontawesome';
+import {
+    FontAwesomeIcon as Fa, FontAwesomeLayersText as Falt, FontAwesomeLayers as Fal
+} from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
 import { faAlgolia } from '@fortawesome/free-brands-svg-icons';
@@ -70,7 +72,7 @@ library.add(faAsterisk, faAlgolia);
 export default {
     name: 'SearchMode',
 
-    components: { CoreSearchMode, Fa },
+    components: { CoreSearchMode, Fa, Fal, Falt },
 };
 </script>
 
