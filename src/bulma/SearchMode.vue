@@ -2,6 +2,7 @@
     <core-search-mode v-bind="$attrs">
         <template #default="{ clickEvents, query, value }">
             <span class="icon"
+                :class="$attrs.class"
                 v-if="query">
                 <a class="is-naked"
                     v-on="clickEvents">
