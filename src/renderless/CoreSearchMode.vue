@@ -23,6 +23,8 @@ export default {
 
     emits: ['change', 'update:modelValue'],
 
+    inheritAttrs: false,
+
     methods: {
         update(event) {
             this.$emit('update:modelValue', this.modes[this.next()]);
