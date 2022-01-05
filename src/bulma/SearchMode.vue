@@ -1,13 +1,13 @@
 <template>
     <core-search-mode v-bind="$attrs">
-        <template #default="{ clickEvents, query, value }">
+        <template #default="{ clickEvents, query, modelValue }">
             <span class="icon"
                 :class="$attrs.class"
                 v-if="query">
                 <a class="is-naked"
                     v-on="clickEvents">
                     <fal :key="query">
-                        <template v-if="value === 'startsWith'">
+                        <template v-if="modelValue === 'startsWith'">
                             <falt :value="query[0]"
                                 :transform="`shrink-2 ${query[1] ? 'left-10' : '' }`"/>
                             <falt :value="query[1]"
@@ -15,12 +15,12 @@
                                 v-if="query[1]"/>
                             <fa icon="asterisk" transform="shrink-6 right-10"/>
                         </template>
-                        <template v-else-if="value === 'full'">
+                        <template v-else-if="modelValue === 'full'">
                             <fa icon="asterisk" transform="shrink-6 left-10"/>
                             <falt :value="query[0]" transform="shrink-2"/>
                             <fa icon="asterisk" transform="shrink-6 right-10"/>
                         </template>
-                        <template v-else-if="value === 'endsWith'">
+                        <template v-else-if="modelValue === 'endsWith'">
                             <fa icon="asterisk"
                                 :transform="`shrink-6 ${query[1] ? 'left-10' : '' }`"/>
                             <falt :value="query[0]"
@@ -29,7 +29,7 @@
                                 transform="shrink-2 right-10"
                                 v-if="query[1]"/>
                         </template>
-                        <template v-else-if="value === 'exactMatch'">
+                        <template v-else-if="modelValue === 'exactMatch'">
                             <falt :value="query[0]"
                                 :transform="`shrink-2 ${query[2] ? 'left-10' : (!query[1] ? 'right-10' : '')}`"/>
                             <falt :value="query[1]"
@@ -39,7 +39,7 @@
                                 transform="shrink-2 right-10"
                                 v-if="query[2]"/>
                         </template>
-                        <template v-else-if="value === 'doesntContain'">
+                        <template v-else-if="modelValue === 'doesntContain'">
                             <falt class="is-strikethrough" :value="query[0]"
                                 :transform="`shrink-2 ${query[2] ? 'left-10' : (!query[1] ? 'right-10' : '')}`"/>
                             <falt class="is-strikethrough" :value="query[1]"
@@ -49,7 +49,7 @@
                                 transform="shrink-2 right-10"
                                 v-if="query[2]"/>
                         </template>
-                        <template v-else-if="value === 'searchProvider'">
+                        <template v-else-if="modelValue === 'searchProvider'">
                             <fa :icon="['fab', 'algolia']"/>
                         </template>
                     </fal>
