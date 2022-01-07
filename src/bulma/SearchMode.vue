@@ -1,5 +1,5 @@
 <template>
-    <core-search-mode v-bind="$attrs">
+    <core-search-mode>
         <template #default="{ clickEvents, query, modelValue }">
             <span class="icon"
                 :class="$attrs.class"
