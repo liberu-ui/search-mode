@@ -4,6 +4,8 @@ import Modes from '../modes';
 export default {
     name: 'CoreSearchMode',
 
+    inheritAttrs: false,
+
     props: {
         modelValue: {
             type: String,
@@ -22,8 +24,6 @@ export default {
     },
 
     emits: ['change', 'update:modelValue'],
-
-    inheritAttrs: false,
 
     methods: {
         update(event) {

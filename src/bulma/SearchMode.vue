@@ -31,9 +31,13 @@
                         </template>
                         <template v-else-if="modelValue === 'exactMatch'">
                             <falt :value="query[0]"
-                                :transform="`shrink-2 ${query[2] ? 'left-10' : (!query[1] ? 'right-10' : '')}`"/>
+                                :transform="`shrink-2 ${query[2]
+                                    ? 'left-10'
+                                    : (!query[1] ? 'right-10' : '')}`"/>
                             <falt :value="query[1]"
-                                :transform="`shrink-2 ${query[2] ? '' : 'right-10' }`"
+                                :transform="`shrink-2 ${query[2]
+                                    ? ''
+                                    : 'right-10' }`"
                                 v-if="query[1]"/>
                             <falt :value="query[2]"
                                 transform="shrink-2 right-10"
@@ -41,9 +45,13 @@
                         </template>
                         <template v-else-if="modelValue === 'doesntContain'">
                             <falt class="is-strikethrough" :value="query[0]"
-                                :transform="`shrink-2 ${query[2] ? 'left-10' : (!query[1] ? 'right-10' : '')}`"/>
+                                :transform="`shrink-2 ${query[2]
+                                    ? 'left-10'
+                                    : (!query[1] ? 'right-10' : '')}`"/>
                             <falt class="is-strikethrough" :value="query[1]"
-                                :transform="`shrink-2 ${query[2] ? '' : 'right-10' }`"
+                                :transform="`shrink-2 ${query[2]
+                                    ? ''
+                                    : 'right-10' }`"
                                 v-if="query[1]"/>
                             <falt class="is-strikethrough" :value="query[2]"
                                 transform="shrink-2 right-10"
@@ -61,7 +69,7 @@
 
 <script>
 import {
-    FontAwesomeIcon as Fa, FontAwesomeLayersText as Falt, FontAwesomeLayers as Fal
+    FontAwesomeIcon as Fa, FontAwesomeLayersText as Falt, FontAwesomeLayers as Fal,
 } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faAsterisk } from '@fortawesome/free-solid-svg-icons';
@@ -73,7 +81,9 @@ library.add(faAsterisk, faAlgolia);
 export default {
     name: 'SearchMode',
 
-    components: { CoreSearchMode, Fa, Fal, Falt },
+    components: {
+        CoreSearchMode, Fa, Fal, Falt,
+    },
 };
 </script>
 
