@@ -9,7 +9,7 @@
 Search Mode
 
 ## Usage
-The components can be used outside of the Enso ecosystem.
+The components can be used outside of the Liberu ecosystem.
 
 ### Demo
 
@@ -39,7 +39,7 @@ import SearchMode from '@enso-ui/search-mode/bulma';
 
 are welcome. Pull requests are great, but issues are good too.
 
-Thank you to all the people who already contributed to Enso!
+Thank you to all the people who already contributed to Liberu!
 
 ## License
 
