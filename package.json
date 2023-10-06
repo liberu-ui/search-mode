@@ -1,6 +1,6 @@
 {
   "name": "@liberu-ui/search-mode",
-  "version": "3.0.14",
+  "version": "3.0.15",
   "description": "Search Mode",
   "main": "index.js",
   "scripts": {
