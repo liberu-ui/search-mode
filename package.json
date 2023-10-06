@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enso-ui/search-mode.git"
+    "url": "git+https://github.com/liberu-ui/search-mode.git"
   },
   "keywords": [
     "search-mode",
@@ -18,9 +18,9 @@
   "author": "Adrian Ocneanu <aocneanu@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/enso-ui/search-mode/issues"
+    "url": "https://github.com/liberu-ui/search-mode/issues"
   },
-  "homepage": "https://github.com/enso-ui/search-mode#readme",
+  "homepage": "https://github.com/liberu-ui/search-mode#readme",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
