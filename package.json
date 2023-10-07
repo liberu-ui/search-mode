@@ -2,7 +2,7 @@
   "name": "@liberu-ui/search-mode",
   "version": "3.0.17",
   "description": "Search Mode",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
